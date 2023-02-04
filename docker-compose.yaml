@@ -1,0 +1,13 @@
+version: "3"
+services:
+  ft_auth_bot:
+    build: ./
+    image: ft_auth_bot
+    restart: always
+    environment:
+      - REDIR_URI=${REDIR_URI}
+      - BOT_TOKEN=${BOT_TOKEN}
+      - GUILD_ID=${GUILD_ID}
+      - ROLE_ID=${ROLE_ID}
+      - APP_UID=${APP_UID}
+      - APP_SECRET=${APP_SECRET}
